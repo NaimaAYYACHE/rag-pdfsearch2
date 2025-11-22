@@ -1,0 +1,9 @@
+MultiHead(Q,K,V ) = Concat(head1,...,head h)WO (9)
+wherehead i = Attention(QWQ
+i ,KW K
+i ,VW V
+i )
+In the decoder part of the Transformer, masked multi-head attention is
+applied ﬁrst to ensure that only previous word embeddings are used when
+trying to predict the next word in the sentence. Therefore, the embeddings
+that shouldn’t be seen by the decoder are masked by multiplying with zero.gn \n
